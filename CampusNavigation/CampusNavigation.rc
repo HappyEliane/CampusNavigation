@@ -1,0 +1,609 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\CampusNavigation.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CampusNavigation.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CampusNavigation"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "CampusNavigation，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_CAMPUSNAVIGATION_DIALOG DIALOGEX 0, 0, 551, 395
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CampusNavigation"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "道路标记",IDC_ROADMARK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,335,65,43,10
+    CONTROL         "建筑标记",IDC_BUILDINGMARK,"Button",BS_AUTOCHECKBOX,335,78,43,10
+    CONTROL         "院系办公地点展示",IDC_DEPARTMARK,"Button",BS_AUTOCHECKBOX,335,94,71,10
+    CONTROL         "购物、饮食",IDC_SHOPPINGMARK,"Button",BS_AUTOCHECKBOX,335,106,50,10
+    PUSHBUTTON      "定位",IDC_BUTTON1,487,75,57,19
+    PUSHBUTTON      "实景模式",IDC_BUTTON2,445,22,37,21,WS_GROUP
+    GROUPBOX        "功能",IDC_STATIC,333,9,211,379
+    GROUPBOX        "地图",IDC_STATIC,12,5,313,383
+    PUSHBUTTON      "显示最短路径",IDC_SHORTESTPATH,378,95,57,19,NOT WS_VISIBLE
+    PUSHBUTTON      "线路",IDC_BUTTON5,395,22,37,21,WS_GROUP
+    PUSHBUTTON      "查找",IDC_BUTTON6,495,22,37,21,WS_GROUP
+    PUSHBUTTON      "大家都走的路",IDC_BUTTON7,377,69,57,19
+    LTEXT           "起点：",IDC_STATIC3,344,137,22,8
+    LTEXT           "终点：",IDC_STATIC4,346,155,22,8
+    CONTROL         "区域块选择",IDC_BLOCKSEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,335,50,50,10
+    COMBOBOX        IDC_COMBO3,370,138,72,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,373,155,72,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,496,54,48,18,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "工大风采",IDC_STATIC,341,197,28,8
+    PUSHBUTTON      "常规",IDC_BUTTON8,345,22,37,21,WS_GROUP
+    PUSHBUTTON      "切入实景模式",IDC_ENTERSENCE,433,45,57,19
+    PUSHBUTTON      "退出实景模式",IDC_BUTTON9,433,68,57,19
+    PUSHBUTTON      "显示所有",IDC_BUTTON10,487,101,57,19
+    PUSHBUTTON      "清除所有",IDC_BUTTON11,487,129,57,19
+    COMBOBOX        IDC_COMBO1,345,173,71,73,CBS_SIMPLE | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "开始观光",IDC_BUTTON12,437,91,57,19
+    PUSHBUTTON      "停止观光",IDC_STOPVISIT,437,113,57,19
+    PUSHBUTTON      "我们路过。。。",IDC_BUTTON14,379,42,57,19
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CampusNavigation.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "CampusNavigation.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_CAMPUSNAVIGATION_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 544
+        VERTGUIDE, 214
+        BOTTOMMARGIN, 388
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MMAIN               BITMAP                  "bitmaps\\mainmap.bmp"
+IDB_MRDS1SEL            BITMAP                  "bitmaps\\mrds1sel.bmp"
+IDB_MRDS2SEL            BITMAP                  "bitmaps\\mrds2sel.bmp"
+IDB_MRDS3SEL            BITMAP                  "bitmaps\\mrds3sel.bmp"
+IDB_MROADMARK           BITMAP                  "bitmaps\\mroadmarked.bmp"
+IDB_S1SELECTED          BITMAP                  "bitmaps\\s1selected.bmp"
+IDB_S2SELECTED          BITMAP                  "bitmaps\\s2selected.bmp"
+IDB_S3SELECTED          BITMAP                  "bitmaps\\s3selected.bmp"
+IDB_SECTION1            BITMAP                  "bitmaps\\section1.bmp"
+IDB_SECTION2            BITMAP                  "bitmaps\\section2.bmp"
+IDB_SECTION3            BITMAP                  "bitmaps\\section3.bmp"
+IDB_A11                 BITMAP                  "bitmaps\\1.bmp"
+IDB_A1                  BITMAP                  "bitmaps\\mainbuilding\\W_1_1.bmp"
+IDB_A2                  BITMAP                  "bitmaps\\mainbuilding\\W_1_2.bmp"
+IDB_A3                  BITMAP                  "bitmaps\\mainbuilding\\W_1_3.bmp"
+IDB_A4                  BITMAP                  "bitmaps\\mainbuilding\\W_1_4.bmp"
+IDB_A5                  BITMAP                  "bitmaps\\mainbuilding\\W_1_5.bmp"
+IDB_A6                  BITMAP                  "bitmaps\\mainbuilding\\W_1_6.bmp"
+IDB_A7                  BITMAP                  "bitmaps\\mainbuilding\\W_1_7.bmp"
+IDB_A8                  BITMAP                  "bitmaps\\mainbuilding\\W_1_8.bmp"
+IDB_A9                  BITMAP                  "bitmaps\\mainbuilding\\W_1_9.bmp"
+IDB_A10                 BITMAP                  "bitmaps\\mainbuilding\\W_1_10.bmp"
+IDB_A41                 BITMAP                  "bitmaps\\m4\\41.bmp"
+IDB_A42                 BITMAP                  "bitmaps\\m4\\42.bmp"
+IDB_A43                 BITMAP                  "bitmaps\\m4\\43.bmp"
+IDB_A44                 BITMAP                  "bitmaps\\m4\\44.bmp"
+IDB_A45                 BITMAP                  "bitmaps\\m4\\45.bmp"
+IDB_A46                 BITMAP                  "bitmaps\\m4\\46.bmp"
+IDB_A47                 BITMAP                  "bitmaps\\m4\\47.bmp"
+IDB_A48                 BITMAP                  "bitmaps\\m4\\48.bmp"
+IDB_BUILDING1           BITMAP                  "bitmaps\\building1.bmp"
+IDB_BUILDING2           BITMAP                  "bitmaps\\building2.bmp"
+IDB_SHOPPING1           BITMAP                  "bitmaps\\shopping1.bmp"
+IDB_SHOPPING2           BITMAP                  "bitmaps\\shopping2.bmp"
+IDB_TUSHUGUANDLG1       BITMAP                  "bitmaps\\DLG1.bmp"
+IDB_TUSHUGUANDLG2       BITMAP                  "bitmaps\\DLG2.bmp"
+IDB_BITMAP6             BITMAP                  "bitmaps\\2.bmp"
+IDB_BITMAP7             BITMAP                  "bitmaps\\3.bmp"
+IDB_BITMAP8             BITMAP                  "bitmaps\\4.bmp"
+IDB_BITMAP9             BITMAP                  "bitmaps\\6.bmp"
+IDB_BITMAP11            BITMAP                  "bitmaps\\9.bmp"
+IDB_BITMAP12            BITMAP                  "bitmaps\\10.bmp"
+IDB_BITMAP13            BITMAP                  "bitmaps\\11.bmp"
+IDB_BITMAP15            BITMAP                  "bitmaps\\13.bmp"
+IDB_BITMAP16            BITMAP                  "bitmaps\\14.bmp"
+IDB_BITMAP17            BITMAP                  "bitmaps\\16.bmp"
+IDB_BITMAP18            BITMAP                  "bitmaps\\18.bmp"
+IDB_BITMAP19            BITMAP                  "bitmaps\\19.bmp"
+IDB_BITMAP20            BITMAP                  "bitmaps\\20.bmp"
+IDB_BITMAP21            BITMAP                  "bitmaps\\21.bmp"
+IDB_BITMAP22            BITMAP                  "bitmaps\\22.bmp"
+IDB_BITMAP23            BITMAP                  "bitmaps\\23.bmp"
+IDB_BITMAP24            BITMAP                  "bitmaps\\24.bmp"
+IDB_BITMAP26            BITMAP                  "bitmaps\\26.bmp"
+IDB_BITMAP27            BITMAP                  "bitmaps\\27.bmp"
+IDB_BITMAP28            BITMAP                  "bitmaps\\28.bmp"
+IDB_BITMAP29            BITMAP                  "bitmaps\\29.bmp"
+IDB_BITMAP30            BITMAP                  "bitmaps\\30.bmp"
+IDB_BITMAP31            BITMAP                  "bitmaps\\31.bmp"
+IDB_BITMAP32            BITMAP                  "bitmaps\\32.bmp"
+IDB_BITMAP33            BITMAP                  "bitmaps\\33.bmp"
+IDB_C0_RIGHT_HR1        BITMAP                  "bitmaps\\bmp\\c0右转到主楼东边路口\\DSC05422 副本.bmp"
+IDB_C0_RIGHT_HR2        BITMAP                  "bitmaps\\bmp\\c0右转到主楼东边路口\\DSC05441 副本.bmp"
+IDB_C0_RIGHT_HR3        BITMAP                  "bitmaps\\bmp\\c0右转到主楼东边路口\\DSC05451 副本.bmp"
+IDB_C0_RIGHT_HR4        BITMAP                  "bitmaps\\bmp\\c0右转到主楼东边路口\\DSC05465 副本.bmp"
+IDB_C0_RIGHT_HR5        BITMAP                  "bitmaps\\bmp\\c0右转到主楼东边路口\\DSC05482 副本.bmp"
+IDB_STARTPOINT          BITMAP                  "bitmaps\\bmp\\南大门-c0\\DSC04828 副本.bmp"
+IDB_SOUTHDOOR_C0_1      BITMAP                  "bitmaps\\bmp\\南大门-c0\\DSC04831 副本.bmp"
+IDB_SOUTHDOOR_C0_2      BITMAP                  "bitmaps\\bmp\\南大门-c0\\DSC04832 副本.bmp"
+IDB_SOUTHDOOR_SONGJIAN_1 BITMAP                  "bitmaps\\bmp\\南大门到宋健\\DSC05534 副本.bmp"
+IDB_SOUTHDOOR_SONGJIAN_2 BITMAP                  "bitmaps\\bmp\\南大门到宋健\\DSC05536 副本.bmp"
+IDB_SOUTHDOOR_SONGJIAN_3 BITMAP                  "bitmaps\\bmp\\南大门到宋健\\DSC05537 副本.bmp"
+IDB_SOUTHDOOR_SONGJIAN_4 BITMAP                  "bitmaps\\bmp\\南大门到宋健\\DSC05541 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_9 BITMAP                  "bitmaps\\bmp\\DSC15557 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_1 BITMAP                  "bitmaps\\bmp\\南大门西走-第一个楼口\\DSC05542 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_2 BITMAP                  "bitmaps\\bmp\\南大门西走-第一个楼口\\DSC05544 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_3 BITMAP                  "bitmaps\\bmp\\南大门西走-第一个楼口\\DSC05545 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_4 BITMAP                  "bitmaps\\bmp\\南大门西走-第一个楼口\\DSC05549 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_5 BITMAP                  "bitmaps\\bmp\\南大门西走-第一个楼口\\DSC05551 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_6 BITMAP                  "bitmaps\\bmp\\南大门西走-第一个楼口\\DSC05554 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_7 BITMAP                  "bitmaps\\bmp\\南大门西走-第一个楼口\\DSC05555 副本.bmp"
+IDB_SOUTHDOOR_WEST_TECH_HOUSE_8 BITMAP                  "bitmaps\\bmp\\南大门西走-第一个楼口\\DSC15558 副本.bmp"
+IDB_c0_c1_5             BITMAP                  "bitmaps\\bmp\\c1-c0\\DSC05521 副本.bmp"
+IDB_c0_c1_4             BITMAP                  "bitmaps\\bmp\\c1-c0\\DSC05525 副本.bmp"
+IDB_c0_c1_3             BITMAP                  "bitmaps\\bmp\\c1-c0\\DSC05531 副本.bmp"
+IDB_c0_c1_2             BITMAP                  "bitmaps\\bmp\\c1-c0\\DSC05532 副本.bmp"
+IDB_c0_c1_1             BITMAP                  "bitmaps\\bmp\\c1-c0\\DSC05533 副本.bmp"
+IDB_C1_C2_1             BITMAP                  "bitmaps\\bmp\\C1-C2\\DSC04846 副本.bmp"
+IDB_C1_C2_2             BITMAP                  "bitmaps\\bmp\\C1-C2\\DSC04848 副本.bmp"
+IDB_C1_C2_3             BITMAP                  "bitmaps\\bmp\\C1-C2\\DSC04849 副本.bmp"
+IDB_C2_C7_3             BITMAP                  "bitmaps\\bmp\\c2-g楼-c7\\DSC05574 副本.bmp"
+IDB_C2_C7_2             BITMAP                  "bitmaps\\bmp\\c2-g楼-c7\\DSC05575 副本.bmp"
+IDB_C2_C7_1             BITMAP                  "bitmaps\\bmp\\c2-g楼-c7\\DSC05576 副本.bmp"
+IDB_C2_C7_4             BITMAP                  "bitmaps\\bmp\\c2-g楼-c7\\DSC05579 副本.bmp"
+IDB_C2_LIBRARY_1        BITMAP                  "bitmaps\\bmp\\C2-图书馆\\DSC04850 副本.bmp"
+IDB_C2_LIBRARY_2        BITMAP                  "bitmaps\\bmp\\C2-图书馆\\DSC04851 副本.bmp"
+IDB_C2_LIBRARY_3        BITMAP                  "bitmaps\\bmp\\C2-图书馆\\DSC04852 副本.bmp"
+IDB_C7_C8_4             BITMAP                  "bitmaps\\bmp\\c8-c7\\DSC05685 副本.bmp"
+IDB_BITIDB_C7_C8_1MAP35 BITMAP                  "bitmaps\\bmp\\c8-c7\\DSC05688 副本.bmp"
+IDB_C7_C8_3             BITMAP                  "bitmaps\\bmp\\c8-c7\\DSC05692 副本.bmp"
+IDB_C7_C8_2             BITMAP                  "bitmaps\\bmp\\c8-c7\\DSC05694 副本.bmp"
+IDB_C7_C8_1             BITMAP                  "bitmaps\\bmp\\c8-c7\\DSC05696 副本.bmp"
+IDB_LIBRARY_ONE_1       BITMAP                  "bitmaps\\bmp\\图书馆-一公寓\\DSC04854 副本.bmp"
+IDB_LIBRARY_ONE_2       BITMAP                  "bitmaps\\bmp\\图书馆-一公寓\\DSC04856 副本.bmp"
+IDB_LIBRARY_ONE_3       BITMAP                  "bitmaps\\bmp\\图书馆-一公寓\\DSC04857 副本.bmp"
+IDB_LIBRARY_ONE_4       BITMAP                  "bitmaps\\bmp\\图书馆-一公寓\\DSC04858 副本.bmp"
+IDB_LIBRARY_ONE_5       BITMAP                  "bitmaps\\bmp\\学苑餐厅-三公寓-四公寓\\DSC04859 副本.bmp"
+IDB_C8_N_1              BITMAP                  "bitmaps\\bmp\\c9-c8\\DSC05676 副本.bmp"
+IDB_C8_N_2              BITMAP                  "bitmaps\\bmp\\c9-c8\\DSC05678 副本.bmp"
+IDB_C8_N_3              BITMAP                  "bitmaps\\bmp\\c9-c8\\DSC05680 副本.bmp"
+IDB_C8_N_14             BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05647 副本.bmp"
+IDB_C8_N_13             BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05648 副本.bmp"
+IDB_C8_N_12             BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05650 副本.bmp"
+IDB_C8_N_11             BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05651 副本.bmp"
+IDB_C8_N_10             BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05652 副本.bmp"
+IDB_C8_N_9              BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05659 副本.bmp"
+IDB_C8_N_4_BITMAP40     BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05661 副本.bmp"
+IDB_C8_N_8              BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05662 副本.bmp"
+IDB_C8_N_7              BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05665 副本.bmp"
+IDB_C8_N_6              BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05666 副本.bmp"
+IDB_C8_N_5              BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05667 副本.bmp"
+IDB_C8_N_4              BITMAP                  "bitmaps\\bmp\\c13-学子-c9\\DSC05668 副本.bmp"
+IDB_C8_N_16             BITMAP                  "bitmaps\\bmp\\N楼北门-西北门\\DSC05615 副本.bmp"
+IDB_C8_N_15             BITMAP                  "bitmaps\\bmp\\N楼北门-西北门\\DSC05616 副本.bmp"
+IDB_SIGN_2              BITMAP                  "bitmaps\\sign\\sign_1.bmp"
+IDB_SIGN_1              BITMAP                  "bitmaps\\sign\\sign_2.bmp"
+IDB_BB_1                BITMAP                  "bitmaps\\各个院系信息\\BUILDING_B1.bmp"
+IDB_BB_2                BITMAP                  "bitmaps\\各个院系信息\\BUILDING_B2.bmp"
+IDB_BH_2                BITMAP                  "bitmaps\\各个院系信息\\BUILDING_H2.bmp"
+IDB_BN_1                BITMAP                  "bitmaps\\各个院系信息\\BUILDING_N1.bmp"
+IDB_BN_2                BITMAP                  "bitmaps\\各个院系信息\\BUILDING_N2.bmp"
+IDB_BSONGJIAN_2         BITMAP                  "bitmaps\\各个院系信息\\SONGJIAN_2.bmp"
+IDB_BSONGJIAN_1         BITMAP                  "bitmaps\\各个院系信息\\SONGJIAN1.bmp"
+IDB_BIT_B1              BITMAP                  "bitmaps\\DEPARTMENT\\BUILDING_B1.bmp"
+IDB_BIT_B2              BITMAP                  "bitmaps\\DEPARTMENT\\BUILDING_B2.bmp"
+IDB_BIT_H1              BITMAP                  "bitmaps\\DEPARTMENT\\BUILDING_H1.bmp"
+IDB_BIT_H2              BITMAP                  "bitmaps\\DEPARTMENT\\BUILDING_H2.bmp"
+IDB_BIT_N1              BITMAP                  "bitmaps\\DEPARTMENT\\BUILDING_N1.bmp"
+IDB_BIT_SONGJIAN1       BITMAP                  "bitmaps\\DEPARTMENT\\SONGJIAN1.bmp"
+IDB_BIT_SONGJIAN2       BITMAP                  "bitmaps\\DEPARTMENT\\SONGJIAN2.bmp"
+IDB_BITMAP34            BITMAP                  "bitmaps\\BUILDING_N1.bmp"
+IDB_BIT_N2              BITMAP                  "bitmaps\\BUILDING_N2.bmp"
+IDB_BIT_SIGN_1          BITMAP                  "bitmaps\\sign\\A_1_1.bmp"
+IDB_BIT_SIGN_2          BITMAP                  "bitmaps\\sign\\A_1_2.bmp"
+IDB_BUILDING_A          BITMAP                  "bitmaps\\infoshow\\BUILDING_A.bmp"
+IDB_BUILDING_B          BITMAP                  "bitmaps\\infoshow\\BUILDING_B.bmp"
+IDB_BUILDING_C          BITMAP                  "bitmaps\\infoshow\\BUILDING_C.bmp"
+IDB_BUILDING_D          BITMAP                  "bitmaps\\infoshow\\BUILDING_D.bmp"
+IDB_BUILDING_G          BITMAP                  "bitmaps\\infoshow\\BUILDING_G.bmp"
+IDB_BUILDING_H          BITMAP                  "bitmaps\\infoshow\\BUILDING_H.bmp"
+IDB_BUILDING_M          BITMAP                  "bitmaps\\infoshow\\BUILDING_M.bmp"
+IDB_BUILDING_N          BITMAP                  "bitmaps\\infoshow\\BUILDING_N.bmp"
+IDB_DEPARTMENT1         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT1.bmp"
+IDB_DEPARTMENT2         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT2.bmp"
+IDB_DEPARTMENT3         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT3.bmp"
+IDB_DEPARTMENT4         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT4.bmp"
+IDB_DEPARTMENT5         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT5.bmp"
+IDB_DEPARTMENT6         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT6.bmp"
+IDB_DEPARTMENT7         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT7.bmp"
+IDB_DEPARTMENT8         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT8.bmp"
+IDB_DEPARTMENT9         BITMAP                  "bitmaps\\infoshow\\DEPARTMENT9.bmp"
+IDB_DEPARTMENT10        BITMAP                  "bitmaps\\infoshow\\DEPARTMENT10.bmp"
+IDB_DLG1                BITMAP                  "bitmaps\\infoshow\\DLG1.bmp"
+IDB_DLG2                BITMAP                  "bitmaps\\infoshow\\DLG2.bmp"
+IDB_HOSPITAL            BITMAP                  "bitmaps\\infoshow\\HOSPITAL.bmp"
+IDB_ICBC                BITMAP                  "bitmaps\\infoshow\\ICBC.bmp"
+IDB_LOVER               BITMAP                  "bitmaps\\infoshow\\LOVER.bmp"
+IDB_SONGJIAN            BITMAP                  "bitmaps\\infoshow\\SONGJIAN.bmp"
+IDB_SOUTHDOOR           BITMAP                  "bitmaps\\infoshow\\SOUTHDOOR.bmp"
+IDB_TBUILDING_A         BITMAP                  "bitmaps\\infoshow\\TBUILDING_A.bmp"
+IDB_TBUILDING_B         BITMAP                  "bitmaps\\infoshow\\TBUILDING_B.bmp"
+IDB_TEACHERHOM          BITMAP                  "bitmaps\\infoshow\\TEACHERHOME.bmp"
+IDB_TEACHERHOME1        BITMAP                  "bitmaps\\infoshow\\TEACHERHOME1.bmp"
+IDB_XUEYUAN             BITMAP                  "bitmaps\\infoshow\\XUEYUAN.bmp"
+IDB_XUEZI               BITMAP                  "bitmaps\\infoshow\\XUEZI.bmp"
+IDB_YOUXIA              BITMAP                  "bitmaps\\infoshow\\YOUXIA.bmp"
+IDB_ZAOTANG             BITMAP                  "bitmaps\\infoshow\\ZAOTANG.bmp"
+IDB_ZUOSHANG            BITMAP                  "bitmaps\\infoshow\\ZUOSHANG.bmp"
+IDB_ZUOXIA              BITMAP                  "bitmaps\\infoshow\\ZUOXIA2.bmp"
+IDB_NORMALSENCE         BITMAP                  "bitmaps\\normal.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CAMPUSNAVIGATION_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO3, 0x403, 7, 0
+0xcfc4, 0xf3b4, 0xc5c3, "\000" 
+    IDC_COMBO3, 0x403, 10, 0
+0xf7d6, 0xa5c2, 0x4828, 0xa5c2, 0x0029, 
+    IDC_COMBO3, 0x403, 4, 0
+0xc247, 0x00a5, 
+    IDC_COMBO3, 0x403, 4, 0
+0xc24d, 0x00a5, 
+    IDC_COMBO3, 0x403, 7, 0
+0xdfc6, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xcbb0, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xc5be, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 9, 0
+0xa7d1, 0xd3d7, 0xcdb2, 0xfccc, "\000" 
+    IDC_COMBO3, 0x403, 8, 0
+0xc24e, 0xb1a5, 0xc3b1, 0x00c5, 
+    IDC_COMBO3, 0x403, 8, 0
+0xc24e, 0xc4a5, 0xc3cf, 0x00c5, 
+    IDC_COMBO3, 0x403, 7, 0
+0xf7ce, 0xb1b1, 0xc5c3, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xbccd, 0xe9ca, 0xddb9, "\000" 
+    IDC_COMBO3, 0x403, 16, 0
+0xc242, 0x28a5, 0xefd3, 0xd4d1, 0xc4ce, 0xa7d1, 0xbad4, 0x0029, 
+    IDC_COMBO3, 0x403, 7, 0
+0xe5ce, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 9, 0
+0xa7d1, 0xb7d4, 0xcdb2, 0xfccc, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xfdc8, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xc4cb, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xfeb6, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xbbd2, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xf9c1, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO3, 0x403, 7, 0
+0xaeca, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xcfc4, 0xf3b4, 0xc5c3, "\000" 
+    IDC_COMBO4, 0x403, 10, 0
+0xf7d6, 0xa5c2, 0x4828, 0xa5c2, 0x0029, 
+    IDC_COMBO4, 0x403, 4, 0
+0xc247, 0x00a5, 
+    IDC_COMBO4, 0x403, 4, 0
+0xc24d, 0x00a5, 
+    IDC_COMBO4, 0x403, 7, 0
+0xdfc6, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xcbb0, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xc5be, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 9, 0
+0xa7d1, 0xd3d7, 0xcdb2, 0xfccc, "\000" 
+    IDC_COMBO4, 0x403, 8, 0
+0xc24e, 0xb1a5, 0xc3b1, 0x00c5, 
+    IDC_COMBO4, 0x403, 8, 0
+0xc24e, 0xc4a5, 0xc3cf, 0x00c5, 
+    IDC_COMBO4, 0x403, 7, 0
+0xf7ce, 0xb1b1, 0xc5c3, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xbccd, 0xe9ca, 0xddb9, "\000" 
+    IDC_COMBO4, 0x403, 16, 0
+0xc242, 0x28a5, 0xefd3, 0xd4d1, 0xc4ce, 0xa7d1, 0xbad4, 0x0029, 
+    IDC_COMBO4, 0x403, 7, 0
+0xe5ce, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 9, 0
+0xa7d1, 0xb7d4, 0xcdb2, 0xfccc, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xfdc8, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xc4cb, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xfeb6, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xbbd2, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xf9c1, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO4, 0x403, 7, 0
+0xaeca, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 9, 0
+0xa7d1, 0xb7d4, 0xcdb2, 0xfccc, "\000" 
+    IDC_COMBO5, 0x403, 9, 0
+0xa7d1, 0xd3d7, 0xcdb2, 0xfccc, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xe5ce, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xbbd2, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xfeb6, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xfdc8, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xc4cb, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xf9c1, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xdfc6, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xcbb0, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xc5be, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 7, 0
+0xaeca, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBO5, 0x403, 4, 0
+0xc24e, 0x00a5, 
+    IDC_COMBO5, 0x403, 4, 0
+0xc24d, 0x00a5, 
+    IDC_COMBO5, 0x403, 4, 0
+0xc241, 0x00a5, 
+    IDC_COMBO5, 0x403, 4, 0
+0xc248, 0x00a5, 
+    IDC_COMBO5, 0x403, 4, 0
+0xc242, 0x00a5, 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3332, 0x2937, 0xa7d1, 0xa3d0, 0xecb0, 0xabb9, 0xd2ca, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0x2848, 0x3133, 0x2936, 0xe9d7, 0xafd6, 0xbfb2, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3133, 0x2935, 0xfbd0, 0xabb4, 0xb3cd, 0xbdd5, 0xbfb2, "\000" 
+    IDC_COMBO1, 0x403, 21, 0
+0x2848, 0x3133, 0x2934, 0xcdbc, 0xecbc, 0xe0bc, 0xbdb6, 0xecb0, 0xabb9, 
+0xd2ca, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0x2848, 0x3333, 0x2938, 0xccbd, 0xf1ce, 0xa6b4, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3132, 0x2933, 0xc6bf, 0xa7d1, 0xbcbc, 0xf5ca, 0xa6b4, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3232, 0x2933, 0xa7d1, 0xfac9, 0xa4b9, 0xf7d7, 0xbfb2, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3133, 0x2937, 0xa2b7, 0xb9d5, 0xe6b9, 0xaebb, 0xa6b4, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0x2848, 0x3232, 0x2932, 0xcbc8, 0xc2ca, 0xa6b4, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3333, 0x2934, 0xc6bc, 0xaebb, 0xc6b2, 0xf1ce, 0xa6b4, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3433, 0x2930, 0xfab9, 0xcabc, 0xcfba, 0xf7d7, 0xa6b4, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3232, 0x2934, 0xb2b0, 0xabc8, 0xa3b1, 0xc0ce, 0xa6b4, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0x2848, 0x3333, 0x2936, 0xa4b9, 0xe1bb, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0x2848, 0x3132, 0x2939, 0xc5cd, 0xafce, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0x2848, 0x3532, 0x2937, 0xbccd, 0xe9ca, 0xddb9, "\000" 
+    IDC_COMBO1, 0x403, 15, 0
+0x2848, 0x3038, 0x2935, 0xf8cd, 0xe7c2, 0xd0d6, 0xc4d0, "\000" 
+    IDC_COMBO1, 0x403, 28, 0
+0xcecb, 0xa8bd, 0xd0d1, 0xbfbe, 0xbad4, 0x3228, 0x3131, 0xb329, 0xc8c9, 
+0xbdcb, 0xd3cc, 0xd1fd, 0xd4a7, 0x00ba, 
+    IDC_COMBO1, 0x403, 29, 0
+0xcb20, 0xbdce, 0xd1a8, 0xbed0, 0xd4bf, 0x28ba, 0x3332, 0x2930, 0xfbc6, 
+0xb5b3, 0xa4b9, 0xccb3, 0xa7d1, 0xbad4, "\000" 
+    IDC_COMBO1, 0x403, 19, 0
+0x2848, 0x3134, 0x2936, 0xc5d0, 0xa2cf, 0xa4b9, 0xccb3, 0xa7d1, 0xbad4, 
+"\000" 
+    IDC_COMBO1, 0x403, 25, 0
+0xcb20, 0xbdce, 0xd1a8, 0xbed0, 0xd4bf, 0x28ba, 0x3135, 0x2932, 0xdcb9, 
+0xedc0, 0xa7d1, 0xbad4, "\000" 
+    IDC_COMBO1, 0x403, 15, 0
+0x284e, 0x3235, 0x2934, 0xcbc8, 0xc4ce, 0xa7d1, 0xbad4, "\000" 
+    IDC_COMBO1, 0x403, 33, 0
+0xcb20, 0xbdce, 0xd1a8, 0xbed0, 0xd4bf, 0x28ba, 0x3034, 0x2935, 0xc6bc, 
+0xe3cb, 0xfabb, 0xebd3, 0xbcbc, 0xf5ca, 0xa7d1, 0xbad4, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2842, 0x3033, 0x2931, 0xe2cd, 0xfab9, 0xefd3, 0xa7d1, 0xbad4, "\000" 
+    IDC_COMBO1, 0x403, 25, 0
+0xcb20, 0xbdce, 0xd1a8, 0xbed0, 0xd4bf, 0x28ba, 0x3035, 0x2931, 0xedc8, 
+0xfebc, 0xa7d1, 0xbad4, "\000" 
+    IDC_COMBO1, 0x403, 29, 0
+0xcb20, 0xbdce, 0xd1a8, 0xbed0, 0xd4bf, 0x28ba, 0x3233, 0x2933, 0xacb4, 
+0xb0b2, 0xa4b9, 0xccb3, 0xa7d1, 0xbad4, "\000" 
+    IDC_COMBO1, 0x403, 13, 0
+0x284e, 0x3335, 0x2935, 0xfdca, 0xa7d1, 0xb5cf, "\000" 
+    IDC_COMBO1, 0x403, 17, 0
+0x2848, 0x3131, 0x2931, 0xe2b9, 0xe7b5, 0xc6bf, 0xa7d1, 0xb5cf, "\000" 
+    IDC_COMBO1, 0x403, 27, 0
+0xcb20, 0xbdce, 0xd1a8, 0xbed0, 0xd4bf, 0x28ba, 0x3036, 0x2935, 0xc1cd, 
+0xbec4, 0xa4b9, 0xccb3, 0xb5cf, "\000" 
+    IDC_COMBO1, 0x403, 15, 0
+0x284e, 0x3234, 0x2933, 0xf9bb, 0xa1b4, 0xa7d1, 0xbfb2, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CampusNavigation(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\CampusNavigation.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
